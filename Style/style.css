@@ -222,7 +222,7 @@ body p {
     .sobre-mim {
         flex-direction: column; 
         text-align: center;
-        padding: 0 2rem 5rem 2rem;
+        padding: 5rem 2rem 5rem 2rem;
     }
     .sobre-mim-texto h1, .sobre-mim-texto p {
         text-align: center;
