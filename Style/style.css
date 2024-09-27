@@ -320,7 +320,7 @@ body p {
     .formacao-filho {
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
-        padding: 0 15rem 5rem 15rem;
+        padding: 0 10rem 5rem 10rem;
     }
 
     .formacao h1 {
