@@ -28,6 +28,10 @@ header{
     margin-top: 6rem;
 }
 
+body{
+    margin-top: 6rem;
+}
+
 body h1 {
     font-family: var(--titulo-fonte);
     font-size: var(--titulo-tamanho);
@@ -166,6 +170,7 @@ body p {
 
 
 
+/* ENTRADA */
 .entrada {
     width: 100vw; 
     height: 100vh; 
@@ -345,67 +350,68 @@ body p {
 
 /* SKILLS */
 .skills {
-    margin: 0 auto; /* Centraliza a seção na página */
-    padding: 2rem; /* Espaçamento interno */
-    text-align: center; /* Centraliza o texto do título */
-    background-color: var(--cinza-escuro); /* Cor de fundo da seção */
+    margin: 0 auto; 
+    padding: 2rem;
+    text-align: center; 
+    background-color: var(--cinza-escuro);
+    padding: 7rem;
 }
 
 .skills h1 {
-    font-family: var(--titulo-fonte); /* Fonte do título */
-    font-size: var(--titulo-tamanho); /* Tamanho da fonte do título */
-    color: var(--titulo-cor); /* Cor do título */
-    margin-bottom: 2rem; /* Espaçamento abaixo do título */
+    font-family: var(--titulo-fonte); 
+    font-size: var(--titulo-tamanho);
+    color: var(--titulo-cor);
+    margin-bottom: 2rem; 
     background-color: var(--cinza-escuro);
 }
 
 .skills-container {
-    display: flex; /* Flexbox para a disposição dos cards */
-    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha, se necessário */
-    justify-content: center; /* Centraliza os cards horizontalmente */
-    gap: 20px; /* Espaçamento entre os cards */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px; 
     background-color: var(--cinza-escuro);
 }
 
 .skills-card {
-    background-color: transparent; /* Sem fundo */
-    border: 2px solid var(--cinza-claro); /* Borda */
-    border-radius: 15px; /* Bordas arredondadas */
-    padding: 20px; /* Espaçamento interno */
+    background-color: transparent; 
+    border: 2px solid var(--cinza-claro);
+    border-radius: 15px; 
+    padding: 20px; 
     display: flex;
     flex-direction: column;
-    align-items: center; /* Alinha o texto ao centro */
-    height: 150px; /* Altura fixa do card */
-    width: 125px; /* Largura fixa do card */
-    transition: border-color 0.3s ease; /* Transição suave da borda */
+    align-items: center; 
+    height: 150px; 
+    width: 125px;
+    transition: border-color 0.3s ease; 
 }
 
 .skills-card img {
-    width: 80px; /* Largura fixa da imagem */
-    height: 80px; /* Altura fixa da imagem */
-    object-fit: contain; /* Mantém a proporção da imagem */
-    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+    width: 80px; 
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px; 
     background-color: var(--cinza-escuro);
 }
 
 .skills-card:hover {
-    border-color: var(--rosa); /* Mudança na cor da borda ao passar o mouse */
+    border-color: var(--rosa);
 }
 
 .skills-card p {
-    margin: 5px 0; /* Margens entre os parágrafos */
+    margin: 5px 0; 
     background-color: var(--cinza-escuro);
 }
 
 @media (max-width: 992px) {
     .skills-container {
-        justify-content: center; /* Centraliza os cards no meio */
+        justify-content: center; 
     }
 }
 
 @media (max-width: 768px) {
     .skills-container {
-        justify-content: center; /* Centraliza os cards no meio */
+        justify-content: center; 
     }
 }
 
@@ -413,36 +419,37 @@ body p {
 
 /* PROJETOS */
 .projetos {
-    width: 100%; /* Garante que a seção ocupe a largura total */
-    margin: 0 auto; /* Centraliza a seção horizontalmente */
+    width: 100%;
+    margin: 0 auto;
     padding: 2rem;
-    text-align: center; /* Centraliza o título e outros elementos */
+    text-align: center;
     padding-top: 7rem;
     padding-bottom: 7rem;
 }
 
 .projetos-container {
-    max-width: 1300px; /* Controla a largura máxima do container */
+    max-width: 1300px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centraliza os cards horizontalmente */
-    gap: 20px; /* Espaçamento entre os cards */
-    margin: 0 auto; /* Centraliza o container dentro da seção */
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
 }
+
 .projetos h1 {
-    font-family: var(--titulo-fonte); /* Fonte do título */
-    font-size: var(--titulo-tamanho); /* Tamanho da fonte do título */
-    color: var(--titulo-cor); /* Cor do título */
-    margin-bottom: 2rem; /* Espaçamento abaixo do título */
+    font-family: var(--titulo-fonte);
+    font-size: var(--titulo-tamanho);
+    color: var(--titulo-cor);
+    margin-bottom: 2rem;
 }
 
 .projeto-card {
-    border: 2px solid var(--cinza-claro); /* Borda */
-    border-radius: 15px; /* Bordas arredondadas */
-    padding: 20px; /* Espaçamento interno */
-    width: 280px; /* Largura fixa do card */
-    text-align: center; /* Centraliza o texto dentro do card */
-    transition: border-color 0.3s ease; /* Transição suave da borda */
+    border: 2px solid var(--cinza-claro);
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    transition: border-color 0.3s ease;
 }
 
 .card-p {
@@ -450,11 +457,11 @@ body p {
 }
 
 .projeto-card img {
-    max-width: 100%; /* A imagem ocupa até 100% da largura do card */
-    height: auto; /* Mantém a proporção da imagem */
-    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
-    border: 3px solid var(--cinza-claro); /* Borda */
-    border-radius: 15px; /* Bordas arredondadas */
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 3px solid var(--cinza-claro);
+    border-radius: 15px;
 }
 
 .projeto-card:hover {
@@ -468,43 +475,43 @@ body p {
 /* FALE COMIGO */
 .fale {
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: center;
     padding-bottom: 7rem;
 }
 
 .fale-content {
     display: flex;
-    align-items: center; /* Centraliza verticalmente o título e os cards */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    gap: 50px; /* Espaçamento entre o título e os cards */
-    flex-wrap: wrap; /* Permite que quebre em telas menores */
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
 .fale-h1 {
-    text-align: left; /* Alinha o título à esquerda */
+    text-align: left;
 }
 
 .fale-h1 h1 {
-    font-family: var(--titulo-fonte); /* Fonte do título */
-    font-size: var(--titulo-tamanho); /* Tamanho do título */
-    color: var(--titulo-cor); /* Cor do título */
+    font-family: var(--titulo-fonte);
+    font-size: var(--titulo-tamanho);
+    color: var(--titulo-cor);
     margin: 0;
 }
 
 .fale-container {
     display: flex;
-    gap: 20px; /* Espaçamento entre os cards */
-    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha, se necessário */
-    justify-content: center; /* Centraliza os cards horizontalmente */
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .fale-card {
-    background-color: transparent; /* Sem fundo */
-    border: 2px solid var(--cinza-claro); /* Borda */
-    border-radius: 15px; /* Bordas arredondadas */
-    padding: 20px; /* Espaçamento interno */
-    width: 250px; /* Largura dos cards */
-    text-align: center; /* Centraliza o conteúdo do card */
+    background-color: transparent;
+    border: 2px solid var(--cinza-claro);
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -513,31 +520,32 @@ body p {
 }
 
 .fale-card img {
-    width: 50px; /* Tamanho do ícone */
-    height: 50px; /* Tamanho do ícone */
-    margin-bottom: 10px; /* Espaçamento entre o ícone e o texto */
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
 }
 
 .fale-card p {
-    font-family: var(--texto-fonte); /* Fonte do texto */
-    font-size: var(--texto-tamanho); /* Tamanho do texto */
-    color: var(--texto-cor); /* Cor do texto */
+    font-family: var(--texto-fonte);
+    font-size: var(--texto-tamanho);
+    color: var(--texto-cor);
     margin: 0;
 }
 
 @media (max-width: 768px) {
     .fale-content {
-        flex-direction: column; /* Empilha o título e os cards no mobile */
-        align-items: center; /* Centraliza o conteúdo no mobile */
-        gap: 20px; /* Reduz o espaçamento no mobile */
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 
     .fale-h1 {
-        text-align: center; /* Centraliza o título no mobile */
+        text-align: center;
     }
 
     .fale-container {
-        justify-content: center; /* Centraliza os cards no mobile */
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -546,81 +554,117 @@ body p {
 /* FOOTER */
 footer {
     margin-top: 0;
-    padding: 2rem 5rem; /* Aumentar o padding para dar mais espaço */
-    background-color: var(--preto); /* Cor de fundo */
-    color: var(--branco); /* Cor do texto padrão */
-    text-align: center; /* Centraliza o texto padrão */
+    padding: 2rem 5rem;
+    background-color: var(--preto);
+    color: var(--branco);
+    text-align: center;
     border-top: 2px solid var(--rosa);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.foter{
+    position: fixed;
 }
 
 .footer-cima {
     display: flex;
-    justify-content: space-between; /* Espaço entre os itens */
-    align-items: center; /* Alinha verticalmente os itens */
-    margin-bottom: 1rem; /* Espaço abaixo da parte superior */
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .footer-cima h1 {
-    margin: 0; /* Remove margens do h1 */
+    margin: 0;
     color: var(--corpo-cor);
 }
 
 .social-icons {
     display: flex;
-    gap: 1rem; /* Espaçamento entre os ícones */
+    gap: 1rem;
 }
 
 .social-icons img {
-    width: 40px; /* Tamanho padrão dos ícones */
-    height: auto; /* Mantém proporção */
-    transition: transform 0.3s; /* Efeito de transição */
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s;
 }
 
 .social-icons img:hover {
-    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+    transform: scale(1.1);
 }
 
 .footer-baixo {
-    margin-top: 1rem; /* Espaço acima do rodapé */
-    font-size: 0.9rem; /* Tamanho da fonte menor */
+    margin-top: 1rem;
+    font-size: 0.9rem;
 }
 
 footer hr {
-    border: none; /* Remove a borda padrão */
-    height: 1px; /* Espessura da linha */
-    background-color: var(--cinza-claro); /* Cor da linha */
-    margin: 1.5rem 0; /* Espaçamento acima e abaixo da linha */
+    border: none;
+    height: 1px;
+    background-color: var(--cinza-claro);
+    margin: 1.5rem 0;
 }
 
 @media (max-width: 768px) {
     footer {
-        padding: 2rem; /* Reduz o padding nas laterais */
+        padding: 2rem;
     }
 
     .footer-cima {
-        flex-direction: column; /* Empilha os itens verticalmente */
+        flex-direction: column;
         justify-content: center;
-        text-align: center; /* Centraliza o texto */
-        gap: 1rem; /* Adiciona um espaço entre os itens empilhados */
+        text-align: center;
+        gap: 1rem;
     }
 
     .footer-cima h1 {
-        margin-bottom: 1rem; /* Espaço abaixo do título */
+        margin-bottom: 1rem;
     }
 
     .social-icons {
-        justify-content: center; /* Centraliza os ícones */
+        justify-content: center;
     }
 
     .social-icons img {
-        width: 40px; /* Aumenta o tamanho dos ícones para telas menores */
+        width: 40px;
     }
 
     footer hr {
-        margin: 1rem 0; /* Reduz o espaço em torno da linha */
+        margin: 1rem 0;
     }
 
     .footer-baixo {
-        font-size: 0.8rem; /* Fonte menor no rodapé */
+        font-size: 0.8rem;
+    }
+}
+
+
+
+/* CERTIFICADOS */
+.certificados {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: calc(100vh - 150px); 
+    padding-top: 2rem;
+}
+
+.certificados-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.certificados img {
+    width: 80%;
+    height: 100%;
+    max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+    .certificados img{
+        width: 100%;
     }
 }
