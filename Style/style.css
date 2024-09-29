@@ -172,7 +172,7 @@ body p {
 
 /* ENTRADA */
 .entrada {
-    width: 100vw; 
+    width: auto; 
     height: 100vh; 
     background-color: var(--cinza-escuro); 
 }
@@ -319,6 +319,10 @@ body p {
     border-color: var(--rosa);
     text-decoration: none;
     color: var(--branco);
+}
+
+.disabled {
+    pointer-events: none; 
 }
 
 @media (max-width: 992px) {
