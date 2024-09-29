@@ -564,10 +564,6 @@ footer {
     width: 100%;
 }
 
-.foter{
-    position: fixed;
-}
-
 .footer-cima {
     display: flex;
     justify-content: space-between;
@@ -649,6 +645,7 @@ footer hr {
     align-items: center; 
     min-height: calc(100vh - 150px); 
     padding-top: 2rem;
+    height: 100vh;
 }
 
 .certificados-img {
@@ -664,6 +661,10 @@ footer hr {
 }
 
 @media (max-width: 768px) {
+    .certificados{
+        padding-bottom: auto;
+    }
+
     .certificados img{
         width: 100%;
     }
