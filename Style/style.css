@@ -24,11 +24,11 @@
     --corpo-tamanho: 0.90rem;
 }
 
-header{
+header {
     margin-top: 6rem;
 }
 
-body{
+body {
     margin-top: 6rem;
 }
 
@@ -46,6 +46,27 @@ body p {
 
 
 
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--cinza-claro);
+    /* Cor do fundo da barra */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--rosa);
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--rosa);
+    border: 3px solid var(--branco);
+}
+
+
+
 /* MENU */
 .navbar {
     display: flex;
@@ -53,11 +74,11 @@ body p {
     align-items: center;
     background-color: var(--preto);
     border-bottom: 2px solid var(--rosa);
-    position: fixed !important; 
+    position: fixed !important;
     top: 0;
-    left: 0; 
-    width: 100%; 
-    z-index: 9999; 
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
 .logo {
@@ -69,12 +90,12 @@ body p {
 }
 
 .brackets {
-    color: var(--rosa); 
+    color: var(--rosa);
     background-color: var(--preto);
 }
 
 .slash {
-    color: var(--rosa); 
+    color: var(--rosa);
     background-color: var(--preto);
 }
 
@@ -104,12 +125,22 @@ body p {
     margin-right: 5rem;
 }
 
-.nav-links-margin{
+.nav-links-margin {
     margin-right: 2rem;
 }
 
 .nav-links li {
     background-color: var(--preto);
+}
+
+a.logo {
+    color: var(--branco); /* Isso mantém a cor original do elemento pai */
+    text-decoration: none; /* Remove o sublinhado padrão */
+}
+
+a.logo:hover {
+    color: var(--branco);
+    text-decoration: none; /* Garante que não haja sublinhado ao passar o mouse */
 }
 
 .nav-links a {
@@ -126,7 +157,7 @@ body p {
 }
 
 @media (max-width: 768px) {
-    .logo{
+    .logo {
         margin-left: 1rem;
     }
 
@@ -172,9 +203,9 @@ body p {
 
 /* ENTRADA */
 .entrada {
-    width: auto; 
-    height: 100vh; 
-    background-color: var(--cinza-escuro); 
+    width: auto;
+    height: 100vh;
+    background-color: var(--cinza-escuro);
 }
 
 
@@ -182,21 +213,21 @@ body p {
 /* SOBRE MIM */
 .sobre-mim {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; 
-    padding: 20px; 
+    margin: 0 auto;
+    padding: 20px;
     gap: 1.25rem;
-    padding-bottom: 7rem; 
+    padding-bottom: 7rem;
     padding-top: 7rem;
     background-color: var(--preto);
 }
 
 .sobre-mim-foto img {
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
-    border-radius: 15px; 
+    border-radius: 15px;
     max-height: 400px;
     border: 2px solid var(--cinza-claro);
 }
@@ -204,11 +235,11 @@ body p {
 .sobre-mim-texto {
     flex: 1;
     max-width: 600px;
-    padding: 10px; 
+    padding: 10px;
 }
 
 .sobre-mim-texto h1 {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
     text-align: left;
 }
 
@@ -217,21 +248,24 @@ body p {
     text-align: left;
 }
 
-@media (max-width: 992px) { 
+@media (max-width: 992px) {
     .sobre-mim {
         padding-bottom: 5rem;
     }
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
     .sobre-mim {
-        flex-direction: column; 
+        flex-direction: column;
         text-align: center;
         padding: 5rem 2rem 5rem 2rem;
     }
-    .sobre-mim-texto h1, .sobre-mim-texto p {
+
+    .sobre-mim-texto h1,
+    .sobre-mim-texto p {
         text-align: center;
     }
+
     .sobre-mim-foto img {
         max-width: 80%;
     }
@@ -239,7 +273,8 @@ body p {
 
 
 
-/* FORMÇÃO */ /* MUDAR O NOME DESSAS CLASSES */
+/* FORMÇÃO */
+/* MUDAR O NOME DESSAS CLASSES */
 .formacao-filho {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -251,7 +286,7 @@ body p {
     padding-bottom: 5rem;
 }
 
-.fomacao-extra{
+.fomacao-extra {
     padding-bottom: 8rem;
 }
 
@@ -299,16 +334,16 @@ body p {
     margin-top: auto;
     display: flex;
     justify-content: center;
-    width: 100%; 
+    width: 100%;
 }
 
 .btn-a {
-    display: inline-block; 
-    padding: 5px 10px; 
-    border: 2px solid var(--cinza-claro); 
-    border-radius: 15px; 
-    color: var(--cinza-claro); 
-    transition: border-color 0.3s ease; 
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--cinza-claro);
+    border-radius: 15px;
+    color: var(--cinza-claro);
+    transition: border-color 0.3s ease;
 }
 
 .formacao-card:hover {
@@ -322,7 +357,7 @@ body p {
 }
 
 .disabled {
-    pointer-events: none; 
+    pointer-events: none;
 }
 
 @media (max-width: 992px) {
@@ -354,47 +389,47 @@ body p {
 
 /* SKILLS */
 .skills {
-    margin: 0 auto; 
+    margin: 0 auto;
     padding: 2rem;
-    text-align: center; 
+    text-align: center;
     background-color: var(--cinza-escuro);
     padding: 7rem;
 }
 
 .skills h1 {
-    font-family: var(--titulo-fonte); 
+    font-family: var(--titulo-fonte);
     font-size: var(--titulo-tamanho);
     color: var(--titulo-cor);
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
     background-color: var(--cinza-escuro);
 }
 
 .skills-container {
-    display: flex; 
-    flex-wrap: wrap; 
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; 
+    gap: 20px;
     background-color: var(--cinza-escuro);
 }
 
 .skills-card {
-    background-color: transparent; 
+    background-color: transparent;
     border: 2px solid var(--cinza-claro);
-    border-radius: 15px; 
-    padding: 20px; 
+    border-radius: 15px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    height: 150px; 
+    align-items: center;
+    height: 150px;
     width: 125px;
-    transition: border-color 0.3s ease; 
+    transition: border-color 0.3s ease;
 }
 
 .skills-card img {
-    width: 80px; 
+    width: 80px;
     height: 80px;
     object-fit: contain;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
     background-color: var(--cinza-escuro);
 }
 
@@ -403,19 +438,19 @@ body p {
 }
 
 .skills-card p {
-    margin: 5px 0; 
+    margin: 5px 0;
     background-color: var(--cinza-escuro);
 }
 
 @media (max-width: 992px) {
     .skills-container {
-        justify-content: center; 
+        justify-content: center;
     }
 }
 
 @media (max-width: 768px) {
     .skills-container {
-        justify-content: center; 
+        justify-content: center;
     }
 }
 
@@ -540,12 +575,12 @@ body p {
     margin: 0;
 }
 
-.fale-card a{
+.fale-card a {
     color: var(--branco);
     text-decoration: none;
 }
 
-.fale-card a:hover{
+.fale-card a:hover {
     color: var(--branco);
     text-decoration: none;
 }
@@ -660,8 +695,8 @@ footer hr {
 .certificados {
     display: flex;
     justify-content: center;
-    align-items: center; 
-    min-height: calc(100vh - 150px); 
+    align-items: center;
+    min-height: calc(100vh - 150px);
     padding-top: 2rem;
     height: 100vh;
 }
@@ -679,11 +714,11 @@ footer hr {
 }
 
 @media (max-width: 768px) {
-    .certificados{
+    .certificados {
         padding-bottom: auto;
     }
 
-    .certificados img{
+    .certificados img {
         width: 100%;
     }
 }
