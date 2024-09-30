@@ -30,7 +30,7 @@ Esse projeto foi desenvolvido com as seguintes ferramentas:
 
 ## **📝 Licença**
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/birobirobiro/nlw-heat-origin-v2/blob/main/.github/LICENSE.md) para mais detalhes.
+Esse projeto está sob a licença MIT.
 
 ---
 
