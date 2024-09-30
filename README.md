@@ -10,7 +10,7 @@ Meu portfólio pessoal, onde exibo informações sobre mim e todos os meus proje
 
 Alguns features existentes são:
 
-- Animação ao Scroll (com JavaScript puro)
+- Animação ao scroll
 - Responsividade para todos dispositivos
 
 Você pode acessá-lo com este [link.](https://d-araujof.github.io/Portifolio/)
