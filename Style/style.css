@@ -520,7 +520,11 @@ body p {
     flex-direction: column;
     align-items: center;
     height: auto;
-    color: var(--corpo-cor);
+}
+
+.fale-card:hover {
+    border-color: var(--rosa);
+    transition: border-color 0.3s ease;
 }
 
 .fale-card img {
@@ -534,6 +538,16 @@ body p {
     font-size: var(--texto-tamanho);
     color: var(--texto-cor);
     margin: 0;
+}
+
+.fale-card a{
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.fale-card a:hover{
+    color: var(--branco);
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {
