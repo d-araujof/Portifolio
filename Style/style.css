@@ -206,6 +206,26 @@ a.logo:hover {
     width: auto;
     height: 100vh;
     background-color: var(--cinza-escuro);
+    display: flex; /* Usando Flexbox para centralizar */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Adiciona espaçamento nas laterais */
+}
+
+.entrada-texto{
+    background-color: var(--cinza-escuro);
+}
+
+.entrada h1 {
+    font-size: 3rem;
+    background-color: var(--cinza-escuro);
+}
+
+.entrada p {
+    font-size: 1.5rem;
+    background-color: var(--cinza-escuro);
+    margin: 20px 0;
 }
 
 
