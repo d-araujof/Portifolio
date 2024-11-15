@@ -1,7 +1,5 @@
 ![img](https://d-araujof.github.io/Portifolio/img/projetos/portifolio.png)
 
-Você pode acessá-lo com este [link.](https://d-araujof.github.io/Portifolio/)
-
 ---
 
 ## **💻 Sobre**
